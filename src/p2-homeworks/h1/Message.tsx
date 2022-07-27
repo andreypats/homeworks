@@ -1,5 +1,5 @@
 import React from 'react'
-import {fdatasync} from "fs";
+import s from './Message.module.css'
 
 type MessagePropsType = {
     avatar: string
@@ -10,13 +10,15 @@ type MessagePropsType = {
 
 function Message(props: MessagePropsType) {
     return (
-        <div className='messagePicture'>
-            <img src={props.avatar} className='avatar'/>
+        <div className={s.messagePicture}>
+            <img src={props.avatar} className={s.avatar}/>
 
-            <div className='content'>
-                <div className='name'>{props.name}</div>
-                <div className='message'>{props.message}</div>
-                <div className='time'>{props.time}</div>
+            <div className={s.angle}/>
+
+            <div className={s.content}>
+                <div className={s.name}>{props.name}</div>
+                <div className={s.message}>{props.message}</div>
+                <div className={s.time}>{props.time}</div>
             </div>
         </div>
     )
