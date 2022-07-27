@@ -25,3 +25,5 @@ function Message(props: MessagePropsType) {
 }
 
 export default Message
+
+//не работает
