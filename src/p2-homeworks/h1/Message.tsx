@@ -10,14 +10,14 @@ type MessagePropsType = {
 
 function Message(props: MessagePropsType) {
     return (
-        <div className={s.messagePicture}>
+        <div className={s.message}>
             <img src={props.avatar} className={s.avatar}/>
 
             <div className={s.angle}/>
 
             <div className={s.content}>
                 <div className={s.name}>{props.name}</div>
-                <div className={s.message}>{props.message}</div>
+                <div className={s.text}>{props.message}</div>
                 <div className={s.time}>{props.time}</div>
             </div>
         </div>
@@ -26,4 +26,3 @@ function Message(props: MessagePropsType) {
 
 export default Message
 
-//не работает
