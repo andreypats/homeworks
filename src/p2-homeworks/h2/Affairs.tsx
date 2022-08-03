@@ -1,6 +1,7 @@
 import React, {SetStateAction} from 'react'
 import Affair from './Affair'
 import {AffairType, filterAffairs, FilterType} from './HW2'
+import s from "./Affairs.module.css";
 
 type AffairsPropsType = { // need to fix any
     data: Array<AffairType>
@@ -32,7 +33,7 @@ function Affairs(props: AffairsPropsType) {
 
 
     return (
-        <div>
+        <div className={s.affairsButton}>
 
             {mappedAffairs}
 
