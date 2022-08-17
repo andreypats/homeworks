@@ -5,7 +5,9 @@
 .column {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: start;
+    background: darkseagreen;
+    width: 250px;
 }
 
 .testSpanError {
