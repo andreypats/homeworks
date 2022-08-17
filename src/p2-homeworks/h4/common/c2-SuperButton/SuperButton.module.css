@@ -2,6 +2,11 @@
 
 }
 
+.button {
+    margin: 5px;
+}
+
 .red {
-    background: red;
+    color: red;
+    background: darkred;
 }
