@@ -1,0 +1,31 @@
+.link {
+    padding-left: 10px;
+    background: darkorange;
+}
+
+.block {
+    width: 20px;
+    height: 20px;
+
+    margin-left: 10px;
+    border: 2px solid black;
+    background: darkorange;
+
+}
+
+.header {
+    display: flex;
+    width: 250px;
+
+    transition-duration: 500ms;
+    transform: translate(-200px);
+}
+
+.header:hover {
+    display: flex;
+    width: 250px;
+
+    transition-duration: 500ms;
+    transform: translate(0);
+}
+
