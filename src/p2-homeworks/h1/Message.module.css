@@ -16,13 +16,13 @@
     padding: 10px;
 
     border-radius: 5px 5px 5px 0;
-    background-color: #47a502;
+    background-color: cadetblue;
 }
 
 .angle {
     height: 15px;
     width: 15px;
-    background: radial-gradient(circle at 0 0, white 15px, #47a502 0);
+    background: radial-gradient(circle at 0 0, whitesmoke 15px, cadetblue 0);
 }
 
 .text {

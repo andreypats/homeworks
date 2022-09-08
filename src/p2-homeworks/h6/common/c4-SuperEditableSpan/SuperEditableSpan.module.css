@@ -1,0 +1,7 @@
+.span {
+    display: inline-block;
+    /*делаем блок для свойства inline*/
+    height: 31px;
+    padding-top: 10px;
+    cursor: pointer;
+}

@@ -1,6 +1,6 @@
 .link {
     padding-left: 10px;
-    background: darkorange;
+    background: cadetblue;
 }
 
 .link:hover {
@@ -13,7 +13,7 @@
 
     margin-left: 10px;
     border: 2px solid black;
-    background: darkorange;
+    background: cadetblue;
 }
 
 .header {
