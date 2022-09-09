@@ -1,3 +1,10 @@
-.option {
+.select {
+    margin: 10px;
+    width: 50px;
+    padding-left: 10px;
+    background-color: whitesmoke;
+}
 
+.option:checked {
+    background-color: wheat;
 }
