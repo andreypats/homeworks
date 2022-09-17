@@ -1,6 +1,6 @@
-import React, {SetStateAction} from 'react'
+import React from 'react'
 import Affair from './Affair'
-import {AffairType, filterAffairs, FilterType} from './HW2'
+import {AffairType, FilterType} from './HW2'
 import s from "./Affairs.module.css";
 
 type AffairsPropsType = { // need to fix any
