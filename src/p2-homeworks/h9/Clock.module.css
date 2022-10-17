@@ -1,13 +1,13 @@
 .clock {
     background-color: cadetblue;
     width: 250px;
+}
+
+.time {
     padding-left: 10px;
 }
 
 .date {
+    padding-left: 10px;
     height: 20px;
-}
-
-.buttons {
-
 }

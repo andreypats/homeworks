@@ -30,9 +30,9 @@ function Clock() {
 
     return (
         <div className={s.clock}>
-            <div
-                onMouseEnter={onMouseEnter}
-                onMouseLeave={onMouseLeave}
+            <div className={s.time}
+                 onMouseEnter={onMouseEnter}
+                 onMouseLeave={onMouseLeave}
             >
                 Time: {stringTime}
             </div>
@@ -43,7 +43,7 @@ function Clock() {
                     </div>
                 )}
             </div>
-            <div className={s.buttons}>
+            <div>
                 <SuperButton onClick={start}>start</SuperButton>
                 <SuperButton onClick={stop}>stop</SuperButton>
             </div>
