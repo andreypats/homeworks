@@ -13,7 +13,7 @@ function Clock() {
     const start = () => {
         stop()
         const id: number = window.setInterval(() => {
-            //setDate push
+            setDate(new Date())
         }, 1000)
         setTimerId(id)
     }
@@ -36,12 +36,13 @@ function Clock() {
             >
                 Time: {stringTime}
             </div>
-
-            {show && (
-                <div>
-                    Date: {stringDate}
-                </div>
-            )}
+            <div className={s.date}>
+                {show && (
+                    <div>
+                        Date: {stringDate}
+                    </div>
+                )}
+            </div>
             <div className={s.buttons}>
                 <SuperButton onClick={start}>start</SuperButton>
                 <SuperButton onClick={stop}>stop</SuperButton>
