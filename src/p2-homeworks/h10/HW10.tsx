@@ -4,12 +4,12 @@ import {useDispatch, useSelector} from "react-redux";
 import {loadingAC} from "./bll/loadingReducer";
 import {AppStoreType} from "./bll/store";
 import style from "../../p1-main/m1-ui/u1-app/App.module.css"
+import loader from "../h10/common/images/loaderDots.gif";
 
 function HW10() {
     // useSelector, useDispatch
     const dispatch = useDispatch();
-    // const loading = false
-    const loading = useSelector<AppStoreType, any>(state => state.loading.isLoading);
+    const loading = useSelector<AppStoreType, boolean>(state => state.loading.isLoading);
 
     const setLoading = () => {
         console.log('loading...')
@@ -29,7 +29,7 @@ function HW10() {
                 {/*should work (должно работать)*/}
                 {loading
                     ? (
-                        <div style={{height: '31px'}}>крутилка...</div>
+                        <img src={loader} alt={"loader image"} style={{height: '27px', paddingLeft: '30px'}}/>
                     ) : (
                         <div>
                             <SuperButton onClick={setLoading}>set loading...</SuperButton>
