@@ -5,6 +5,7 @@ import style from "../../p1-main/m1-ui/u1-app/App.module.css";
 
 function HW11() {
     const [value1, setValue1] = useState(20)
+    const [value2, setValue2] = useState(80)
 
     return (
         <div>
@@ -13,6 +14,7 @@ function HW11() {
 
             {/*should work (должно работать)*/}
             <div className={style.mainBackground}>
+                <div>{value1}</div>
                 <div>
                     <SuperRange
                         value1={value1}
@@ -23,8 +25,14 @@ function HW11() {
                 <div>
                     <SuperDoubleRange
                         value1={value1}
+                        value2={value2}
                         onChangeRange={setValue1}
+                        onChangeRange2={setValue2}
                     />
+                </div>
+                <div>
+                    <span style={{marginRight: '210px'}}>{value1}</span>
+                    <span>{value2}</span>
                 </div>
             </div>
 
