@@ -7,7 +7,7 @@ export const APIRequest = (props: { check: boolean }) => {
 
     useEffect(() => {
         console.log('API render')
-        axios.post('https://neko-cafe-back.herokuapp.com/auth/test', {success: props.check})
+        axios.post('https://incubator-personal-page-back.herokuapp.com/api/3.0/homework/test', {success: props.check})
             .then((res) => {
                 setState(res.data.errorText)
                 console.log('request resolve')
